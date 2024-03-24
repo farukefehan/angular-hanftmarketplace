@@ -15,6 +15,7 @@ import { CartStatusComponent } from './components/cart-status/cart-status.compon
 import { CartDetailsComponent } from './components/cart-details/cart-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 
 
 const routes: Routes=[
@@ -38,7 +39,8 @@ const routes: Routes=[
     ProductDetailsComponent,
     CartStatusComponent,
     CartDetailsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    ThemeToggleComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
