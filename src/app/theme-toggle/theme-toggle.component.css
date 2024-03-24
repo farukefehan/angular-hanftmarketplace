@@ -1,0 +1,11 @@
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .fa-sun, .fa-moon {
+    color: #000; /* İkonunuzun rengi */
+    font-size: 24px; /* İkonunuzun boyutu */
+  }
+  
