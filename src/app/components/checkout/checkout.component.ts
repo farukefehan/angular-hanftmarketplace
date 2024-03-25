@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 import { OrderItem } from '../../common/order-item';
 import { Purchase } from '../../common/purchase';
 import { Order } from '../../common/order';
+import { ThemeService } from '../../theme.service';
 
 @Component({
   selector: 'app-checkout',
@@ -35,7 +36,8 @@ export class CheckoutComponent implements OnInit {
               private haNftFromService: HaNftFromService,
               private cartService: CartService,
               private checkoutService: CheckoutService,
-              private router: Router){}
+              private router: Router,
+              public themeService: ThemeService){}
 
   ngOnInit(): void {
     this.reviewCartDetails();

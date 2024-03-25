@@ -5,12 +5,198 @@
  */
 
 
-
- [data-theme="dark"] {
-    background-color: #121212;
-    color: #ffffff;
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #474747; /* Koyu tema için genel arka plan rengi */
+    color: #ffffff; /* Koyu tema için genel metin rengi */
   }
   
+  .dark-theme .header-desktop .page-wrapper .page-container{
+    background-color: #474747; /* Koyu tema için header arka plan rengi */
+  }
+  .dark-theme .page-wrapper{
+    background-color: #474747; /* Koyu tema için header arka plan rengi */
+  }
+  
+  .dark-theme footer {
+    background-color: #474747; /* Koyu tema için footer arka plan rengi */
+    color: #eee; /* Koyu tema için footer metin rengi */
+  }
+
+  .dark-theme .container {
+    padding: 50px; /* Container padding'ini artır */
+    background-color: #474747; /* Arka plan rengini değiştir */
+    /* Diğer koyu tema özgü stil tanımlamaları */
+  }
+  
+  .dark-theme .text {
+    font-size: 28px; /* Metin boyutunu artır */
+    color: #ffffff; /* Metin rengini değiştir */
+    /* Diğer koyu tema özgü stil tanımlamaları */
+  }
+  .dark-theme .menu-sidebar-content{
+    background-color: #474747; /* Koyu tema için footer arka plan rengi */
+    color: #eee; /* Koyu tema için footer metin rengi */
+  }
+
+  .dark-theme .main-content{
+    background-color: #474747; /* Koyu tema için footer arka plan rengi */
+    color: #eee; /* Koyu tema için footer metin rengi */
+ 
+  }
+  .dark-theme .navbar-sidebar .navbar-list li a{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 20px;
+}
+.dark-theme .header-desktop{
+    background: rgb(88, 1, 186);
+}
+
+  .dark-theme h1{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 40px;
+}
+.dark-theme h2{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 40px;
+}
+.dark-theme h3{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 40px;
+}
+.dark-theme h4{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 40px;
+}
+.dark-theme h5{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 40px;
+}
+.dark-theme h6{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 40px;
+}
+.dark-theme h1 h2 h3,h4,h5,h6{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 40px;
+}
+.dark-theme .form-area {
+    background: #474747;
+    position: relative;
+    margin-bottom: 45px;
+    padding: 50px 20px;
+    border: 3px solid #ccc;
+}
+
+.dark-theme .form-area h3 {
+    position: absolute;
+    top: -26px;
+    left: 13px;
+    background: #474747;
+    padding: 10px 20px;
+    font-weight: 500;
+    z-index: 23;
+    display: inline-block;
+}
+.dark-theme td{
+    padding: 50px; /* Container padding'ini artır */
+    background-color: rgb(88, 1, 186);;
+
+}
+
+.dark-theme label{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 20px;
+}
+
+.dark-theme .items{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 20px;
+}
+
+.dark-theme p{
+    color:#ffffff;
+    font-weight:900;
+    margin:0;
+    line-height:1.2;
+    font-size: 20px;
+}
+
+label, p, .items{
+    color:#000000;
+    font-weight:500;
+    margin:0;
+    line-height:1.2;
+    font-size: 20px;
+}
+
+
+  
+  :root {
+  --primary-text-color: #666;
+  --primary-bg-color: #fff;
+  --primary-text-size: 16px;
+  --product-img-size: 150px;
+
+  /* Dark theme variations */
+  --dark-primary-text-color: #FAFAFA;
+  --dark-primary-bg-color: #363537;
+}
+
+.dark-theme {
+  --primary-text-color: var(--dark-primary-text-color);
+  --primary-bg-color: var(--dark-primary-bg-color);
+}
+
+.product-box img {
+  width: var(--product-img-size);
+  transition: width 0.3s ease;
+}
+
+.product-box h1 {
+  font-size: var(--primary-text-size);
+  transition: font-size 0.3s ease;
+}
+
+/* Grotere tekst en afbeeldingen op hover */
+.product-box:hover img {
+  width: calc(var(--product-img-size) * 1.1);
+}
+
+.product-box:hover h1 {
+  font-size: calc(var(--primary-text-size) * 1.1);
+}
+
   
 
  *{

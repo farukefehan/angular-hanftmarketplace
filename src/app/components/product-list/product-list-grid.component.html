@@ -1,12 +1,12 @@
 <div class="main-content">
     <div class="section-content section-content-p30">
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid"[ngClass]="{'dark-theme': themeService.isDarkMode()}">
+            <div class="row" >
 
                 <!-- loop over the collection of products -->
-                <div *ngFor="let tempProduct of products" class="col-md-3">
+                <div *ngFor="let tempProduct of products" class="col-md-3" [ngClass]="{'dark-theme': themeService.isDarkMode()}">
 
-                    <div class="product-box">
+                    <div class="product-box" [ngClass]="{'dark-theme': themeService.isDarkMode()}">
 
                         <a routerLink="/products/{{ tempProduct.id }}">
                             <img src="{{ tempProduct.imageUrl }}" class="img-responsive">

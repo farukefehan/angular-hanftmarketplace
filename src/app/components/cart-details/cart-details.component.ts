@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { CartItem } from '../../common/cart-item';
+import { ThemeService } from '../../services/theme.service';
 
 
 @Component({
@@ -14,7 +15,9 @@ export class CartDetailsComponent implements OnInit {
   totalPrice: number = 0;
   totalQuantity: number = 0;
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService, public themeService: ThemeService) {};
+
+
 
   ngOnInit(): void {
     this.listCartDetails();

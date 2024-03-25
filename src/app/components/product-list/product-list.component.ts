@@ -4,6 +4,7 @@ import { Product } from '../../common/product';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../../services/cart.service';
 import { CartItem } from '../../common/cart-item';
+import { ThemeService } from '../../services/theme.service';
 
 
 @Component({
@@ -28,7 +29,8 @@ export class ProductListComponent implements OnInit {
 
   constructor(private productService: ProductService,
     private cartService: CartService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    public themeService: ThemeService) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(() =>{

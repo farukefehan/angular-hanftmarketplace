@@ -1,5 +1,5 @@
-<div class="detail-section">
-    <div class="container-fluid">
+<div *ngIf="product" class="detail-section">
+    <div class="container-fluid" [ngClass]="{'dark-theme': themeService.isDarkMode()}">
 
         <img src="{{ product.imageUrl }}" class="detail-img">
 

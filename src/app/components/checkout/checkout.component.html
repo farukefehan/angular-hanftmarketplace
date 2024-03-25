@@ -1,6 +1,6 @@
 <div class="main-content page-m">
     <div class="section-content section-content-p30">
-        <div class="container-fluid">
+        <div class="container-fluid" [ngClass]="{'dark-theme': themeService.isDarkMode()}">
 
             <form [formGroup]="checkoutFormGroup" (ngSubmit)="onSubmit()">
 

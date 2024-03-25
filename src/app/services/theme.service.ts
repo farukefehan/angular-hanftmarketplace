@@ -14,6 +14,8 @@ export class ThemeService {
     this.darkMode = isDarkMode;
     if (isDarkMode) {
       document.body.classList.add('dark-theme');
+      
+      
     } else {
       document.body.classList.remove('dark-theme');
     }

@@ -4,6 +4,7 @@ import { ProductService } from '../../services/product.service';
 import { ActivatedRoute } from '@angular/router';
 import { CartItem } from '../../common/cart-item';
 import { CartService } from '../../services/cart.service';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-product-details',
@@ -15,7 +16,8 @@ export class ProductDetailsComponent {
 
   constructor(private productService: ProductService,
               private cartService: CartService,
-              private route: ActivatedRoute){}
+              private route: ActivatedRoute,
+              public themeService: ThemeService ){}
 
   ngOnInit(): void{
     this.route.paramMap.subscribe(() => {
